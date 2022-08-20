@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Dom Evernt</title>
+</head>
+<body>
+    <h1 id="updateitm">Here You get your mind</h1>
+    
+    <input id="text-field" type="text">
+    <button id="btn-more">My Mind</button>
+    <script>
+        
+        document.getElementById('btn-more').addEventListener('click', function(){
+
+            const inputitm=document.getElementById('text-field')
+            const p=inputitm.value;
+            const updattext=document.getElementById('updateitm')
+            updattext.innerText=p;
+
+        })
+       
+    </script>
+</body>
+</html>
